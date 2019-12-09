@@ -1,0 +1,2 @@
+# aimosxw
+django/project/aimosxw
