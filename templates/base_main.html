@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block ext_css %}
+    {{ block.super }
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock %}
+
+{% block header %}
+    <header></header>
+{% endblock%}
+
+{% block footer %}
+    <footer>
+        <a href="{% url 'sxw:home'%}" class="home">
+            <dl>
+                <dt>
+                    <span>
+
+                    </span>
+                </dt>
+                <dd>首页</dd>
+            </dl>
+        </a>
+        <a href="{% url 'sxw:market'%}" class="market">
+            <dl>
+                <dt>
+                    <span>
+
+                    </span>
+                </dt>
+                <dd>超市</dd>
+            </dl>
+        </a>
+        <a href="{% url 'sxw:cart'%}" class="cart">
+            <dl>
+                <dt>
+                    <span>
+
+                    </span>
+                </dt>
+                <dd>购物车</dd>
+            </dl>
+        </a>
+        <a href="{% url 'sxw:mine'%}" class="mine_icon">
+            <dl>
+                <dt>
+                    <span>
+
+                    </span>
+                </dt>
+                <dd>我的</dd>
+            </dl>
+        </a>
+    </footer>
+{% endblock%}
